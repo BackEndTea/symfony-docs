@@ -11,7 +11,6 @@ These are the technical requirements to run Symfony 4 applications:
 * **PHP version**: 7.1.3 or higher
 * **PHP extensions**: (all of them are installed and enabled by default in PHP 7+)
 
-  * `Ctype`_
   * `iconv`_
   * `JSON`_
   * `PCRE`_
@@ -68,7 +67,6 @@ there are any issues, you'll see them in the console output.
 .. _`iconv`: https://php.net/book.iconv
 .. _`JSON`: https://php.net/book.json
 .. _`Session`: https://php.net/book.session
-.. _`Ctype`: https://php.net/book.ctype
 .. _`Tokenizer`: https://php.net/book.tokenizer
 .. _`SimpleXML`: https://php.net/book.simplexml
 .. _`PCRE`: https://php.net/book.pcre
