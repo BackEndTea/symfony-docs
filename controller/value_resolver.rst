@@ -374,6 +374,20 @@ but you can set it yourself to change its ``priority`` or ``name`` attributes.
 
 .. configuration-block::
 
+    .. code-block:: php-attributes
+
+        // src/ValueResolver/BookingIdValueResolver.php
+        namespace App\ValueResolver;
+
+        use Symfony\Component\DependencyInjection\Attribute\AsTaggedItem;
+        use Symfony\Component\HttpKernel\Controller\ValueResolverInterface;
+
+         #[AsTaggedItem(name: 'booking_id', priority: 150)]
+        class BookingIdValueResolver implements ValueResolverInterface
+        {
+            // ...
+        }
+
     .. code-block:: yaml
 
         # config/services.yaml
