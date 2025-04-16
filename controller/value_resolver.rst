@@ -384,6 +384,20 @@ but you can set it yourself to change its ``priority`` or ``name`` attributes.
             ;
         };
 
+    .. code-block:: php-attributes
+
+        // src/ValueResolver/IdentifierValueResolver.php
+        namespace App\ValueResolver;
+
+        use Symfony\Component\DependencyInjection\Attribute\AsTaggedItem;
+        use Symfony\Component\HttpKernel\Controller\ValueResolverInterface;
+
+         #[AsTaggedItem(name: 'booking_id', priority: 150)]
+        class BookingIdValueResolver implements ValueResolverInterface
+        {
+            // ...
+        }
+
 While adding a priority is optional, it's recommended to add one to make sure
 the expected value is injected. The built-in ``RequestAttributeValueResolver``,
 which fetches attributes from the ``Request``, has a priority of ``100``. If your
