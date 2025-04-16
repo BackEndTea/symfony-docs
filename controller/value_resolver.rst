@@ -322,7 +322,7 @@ this argument) or an array with the resolved value(s). Usually arguments are
 resolved as a single value, but variadic arguments require resolving multiple
 values. That's why you must always return an array, even for single values::
 
-    // src/ValueResolver/IdentifierValueResolver.php
+    // src/ValueResolver/BookingIdValueResolver.php
     namespace App\ValueResolver;
 
     use App\IdentifierInterface;
@@ -469,7 +469,7 @@ As an alternative, you can add the
 :class:`Symfony\\Component\\HttpKernel\\Attribute\\AsTargetedValueResolver` attribute
 to your resolver and pass your custom name as its first argument::
 
-    // src/ValueResolver/IdentifierValueResolver.php
+    // src/ValueResolver/BookingIdValueResolver.php
     namespace App\ValueResolver;
 
     use Symfony\Component\HttpKernel\Attribute\AsTargetedValueResolver;
